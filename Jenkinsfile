@@ -37,7 +37,7 @@ pipeline {
   agent {
     // this image provides everything needed to run Cypress
     any {
-      image 'cypress/included:6.8.0'
+      image 'cypress/base:10'
     }
   }
 
