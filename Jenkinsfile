@@ -87,7 +87,7 @@ pipeline {
           }
         }
 
-        second tester runs the same command
+        // second tester runs the same command
         stage('tester B') {
           steps {
             echo "Running build ${env.BUILD_ID}"
