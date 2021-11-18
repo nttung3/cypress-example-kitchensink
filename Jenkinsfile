@@ -87,13 +87,13 @@ pipeline {
           }
         }
 
-        // second tester runs the same command
-        // stage('tester B') {
-        //   steps {
-        //     echo "Running build ${env.BUILD_ID}"
-        //     sh "npm run e2e:record:parallel"
-        //   }
-        // }
+        second tester runs the same command
+        stage('tester B') {
+          steps {
+            echo "Running build ${env.BUILD_ID}"
+            sh "npm run e2e:record:parallel"
+          }
+        }
       }
 
     }
