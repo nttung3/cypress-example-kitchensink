@@ -36,7 +36,7 @@
 pipeline {
   agent {
     // this image provides everything needed to run Cypress
-    docker {
+    any {
       image 'cypress/base:10'
     }
   }
